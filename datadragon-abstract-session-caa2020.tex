@@ -1,0 +1,81 @@
+\documentclass[a4paper]{article}
+%\usepackage{simplemargins}
+
+\usepackage[
+	pdftitle={Hic sunt dracones - Improving knowledge exchange in the Semantic Web with Linked Open and FAIR data},
+	pdfsubject={Hic sunt dracones - Improving knowledge exchange in the Semantic Web with Linked Open and FAIR data},
+	pdfauthor={Florian Thiery, Martina Trognitz, Ethan Gruber},
+	pdfkeywords={Linked Data, LOUD, FAIR, CAA, CAAOxford}
+]{hyperref}
+
+\input{doiCmd}
+%\RequirePackage{doi}
+%\usepackage[square]{natbib}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\Large
+ \begin{center}
+Hic sunt dracones -\\ Improving knowledge exchange in the Semantic Web with Linked Open and FAIR data\\ 
+
+\hspace{10pt}
+
+% Author names and affiliations
+\large
+Florian Thiery$^1$, Martina Trognitz$^2$, Ethan Gruber$^3$\\
+
+\hspace{10pt}
+
+\small  
+$^1$ R{\"o}misch-Germanisches Zentralmuseum, $^2$ Austrian Centre for Digital Humanities at Austrian Academy of Sciences, $^3$ American Numismatic Society\\
+$^1$ thiery@rgzm.de, $^2$ Martina.Trognitz@oeaw.ac.at, $^3$ gruber@numismatics.org\\
+
+\end{center}
+
+\normalsize
+
+In historical maps, the phrase `Hic sunt dracones` (engl. here be dragons) is used to describe areas which were unknown to the map creator \cite{wuttke_here_2019}. Today the WWW gives researchers the possibility of sharing their research (data) and enables the community to participate in the scientific discourse to create previously unknown knowledge. But much of this shared data are not findable or accessible, thus resulting in modern ‘unknown data dragons’. Often these ‘data dragons’ lack connections to other datasets, i. e. they are not interoperable and in some cases even lack usefulness or usability. To overcome these shortcomings, a set of techniques, standards and recommendations can be used: Semantic Web and Linked Open Data, the FAIR principles and LOUD data.
+
+Tim Berners-Lee introduced the concept of `Semantic Web`, where he suggested using the ideas of Open Data, semantically described resources and links, as well as usable (machine readable) interfaces and applications for creating a `Giant Global Graph`. In 2016 the FAIR principles were introduced \cite{wilkinson_fair_2016}: Research data and its metadata have to be Findable, Accessible, Interoperable and Reusable. Linked Data is an essential part of the FAIR principles: “The Semantic Web isn't just about putting data on the web. It is about making links, so that a person or machine can explore the web of data. \cite{berners-lee_linked_2006}. “ Publishing research data as HTTP URIs with RDF content containing links to other resources makes data FAIR! 
+
+On top of that, these data should be `open` for access, re-use and universal participation \cite{open_data_handbook_what_2019}. A five star rating system of openness \cite{hausenblas_5_star_2012} was introduced to rate Linked Data, i. e. “Linked Open Data (LOD) is Linked Data which is released under an open licence. \cite{berners-lee_linked_2006}.“ Furthermore, LOD have to be `usable` for scientists and programmers to take advantage of all the LOD power. Following the LOUD principles\cite{sanderson_loud_2019} will make LOD even more FAIR.
+
+Merging all these principles to create FAIR and LOUD research data results in the `Sphere 7 Data Model` \cite{thiery_sphere_2019}, which enables a wide array of digital humanities and archaeological (web-)applications using LOUD and FAIR data.
+
+The Linked Data Cloud already offers research data repositories for certain archaeological and humanities domains. Popular examples of FAIR LOUD providers are: Nomisma.org \cite{gruber_linked_2018}, Kerameikos.org \cite{gruber_linked_2015}, Pelagios \cite{isaksen_pelagios_2014}, OpenContext \cite{kansa_publishing_2007}, Portable Antiquities Scheme \cite{harper_toys_2018}, ARIADNE \cite{consiglio_nazionale_delle_ricerche_isti_enabling_2017} and there are more to come, e.g. NAVIS \cite{thiery_taming_2018_1}, ARS3D \cite{thiery_ars3d_2019} and ARIADNEplus \cite{ariadneplus_ariadneplus_2019}. 
+
+The development of more and more repositories poses challenges in handling the complex facets of data quality and completeness. This is especially valid for archaeological data, which are based on a complicated network of concepts from different knowledge domains. Moreover, it is necessary to include means of conveying knowledge about uncertainty in the data models to produce and publish transparent FAIR and LOUD data that can also describe specific stratigraphies or the (archaeological) context of objects. In order to be able to connect different data resources, exchange standards also have to be developed, published and applied.
+
+To enable non-experts in engaging with FAIR, and especially LOUD data, small tools - `minions` - were created for different purposes, such as modelling a relative chronology (Alligator \cite{seidensticker_rdf_2018}), modelling and reasoning on vague edges in graph data (Academic Meta Tool \cite{thiery_taming_2018}), creating annotated texts and images (Recogito \cite{simon_linked_2017}), and creating controlled vocabularies (Labeling System \cite{thiery_labeling_2016}). Furthermore, Wikidata \cite{mika_introducing_2014} not only offers community-driven data, but also provides a vast set of tools for using and interacting with it.
+
+The goal of our session is to bring together experts on LOD and FAIR data, as well as anybody interested in learning about FAIR and LOUD data-driven publishing, applications and research projects based on this kind of data. We would like to discuss ideas for FAIR and LOUD data models as a basis for reproducible research and exchange in the Semantic Web.
+
+This session is intended as a starting point for a CAA SIG on `Semantics and LOUD in Archaeology`. The core aim of this SIG is to use the CAA’s SIG format to raise awareness for Linked Data in archaeology by creating a friendly and open platform to discuss the role of LOUD and FAIR Data in archaeology, and to enable the CAA community to learn about  LOD basics. If you wish to join the SIG, feel free to contact us to be an active part of the discussion \cite{thiery_caa_2019} and help us to navigate archaeology away from the data dragons.
+
+The success of the sessions on data quality in Linked Data at CAA 2017 and 2018 has raised awareness of the many challenges related to FAIR and LOUD data, and encourages pursuing the debate. For this session we invite contributions that address part or all of the following issues:
+
+\begin{itemize}
+	\item application of semantic web technologies, such as ontologies or RDF, to the archaeological domain
+	\item modelling archaeological artefacts as FAIR and LOUD data
+	\item modelling archaeological context, including the specificity of stratigraphy, uncertainty, and vagueness as FAIR and LOUD data
+	\item proposals for FAIR and LOUD data exchange standards
+	\item development of research tools producing or using FAIR and LOUD data
+	\item identifying sources and dangers of incorrect or ambiguous LOD
+	\item identifying duplicates across different LOD sources
+	\item keeping track of the provenance of data as a means of solving errors and identifying their source
+	\item setting up methodologies and tools in order to label or assess datasets based on their quality
+	\item dealing with ambiguities resulting from multiple links in the LOD cloud
+	\item computer vision or machine learning applications built upon controlled, semantic data
+\end{itemize}
+
+We encourage presenters to derive the problems from real-world datasets and to formulate proposals for solutions, preferably demonstrating (prototypes of) realised data-driven web applications. Since we target a broad and diverse audience because of the thematic relevance, the challenges described should also be integrated into the archaeological context (excavation, museum, archive, etc.).
+
+\bibliographystyle{IEEEtran}
+\bibliography{bib}
+
+\end{document}
